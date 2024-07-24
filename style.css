@@ -610,9 +610,9 @@ footer {
 }
 
 .form-control {
-  text-align: left;
-  margin-bottom: 25px;
  
+  margin-bottom: 25px;
+ text-align: center;
 }
 .dist
 {list-style: none;
@@ -637,27 +637,12 @@ footer {
 .firsthalf {
    
   display: flex;
-  flex-direction: column;
+  
   justify-content: center;
   font:bold;
   text-align: center;
 }
-.formcontact{
-      
-      
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  height: 400px;
-  border-radius: 20px;
-
-  font-weight:bolder;
-  margin-bottom: 20px;
-
-  text-align: center;
-  justify-content: center;
-}
-
-
-/* Styling form-control input, 
+ /* Styling form-control input, 
 select, textarea */
 
 .form-control select,textarea,input
@@ -676,7 +661,7 @@ color: black;
   justify-content: center;
   border: 2px solid hsl(108, 82%, 31%);
   border-radius: 20px;
-   
+   width: 400px;
   text-align: center;
   
 }
@@ -689,9 +674,10 @@ color: black;
 
    }
   .formcontact{
-    
+    text-align: center;
     width:400px;
-  
+    justify-content: center;
+     
     padding-right: 20px;
   
     padding-left: 20px;
@@ -753,7 +739,15 @@ select {
 }
  
 @media only screen and (max-width: 300px)
-{
+{.form-control{
+  display: block;
+  justify-content: center;
+  border: 2px solid hsl(108, 82%, 31%);
+  border-radius: 20px;
+ 
+  text-align: center;
+  
+}
 
  
   *::after,*::before {
@@ -821,11 +815,19 @@ select {
 }
 
 @media only screen and (max-width: 300px)and ( max-width: 420px)
- { 
+ { .form-control{
+  display: block;
+  justify-content: center;
+   
+  text-align: center;
+  
+}
+.formcontact{
+display: block;
+width: 400px;
 
-  .alappimg img{
-    width:100%;
-  }
+}
+  
   
   #aboutus
   { display: block;
@@ -905,27 +907,20 @@ select {
    
 @media only screen and (max-width:420px) and (max-width:460px)  {
 
+  .form-control{
+    justify-content: center;
+    border: 2px solid hsl(108, 82%, 31%);
+    border-radius: 20px;
+     width: 350px;
+    text-align: center;
   
-  *::after,*::before {
-    display: block;
-    box-sizing: border-box;
-    content: "";
-    position: absolute;
-  
-    left: 10%;
-    right: 10%;
-    bottom: 16px;
-    width: 150px;
-    height: 14px;
-    
-   text-align: center;
-   justify-content: center;
-    z-index: -1;}
-    
-  .html{
-    font-size: 50%;
-    width:90vw;
   }
+  .formcontact
+  {
+    text-align: center;justify-content: center;display: block;
+  
+  }
+  
 .alappimg img{
   width:100%;
 }
@@ -961,26 +956,7 @@ select {
 @media only screen and(max-width:460px) and (max-width:576px)
 {
 
-  *::after,*::before {
-    display: block;
-    box-sizing: border-box;
-    content: "";
-    position: absolute;
   
-    left: 10%;
-    right: 10%;
-    bottom: 16px;
-    width: 150px;
-    height: 14px;
-    
-   text-align: center;
-   justify-content: center;
-    z-index: -1;}
-    
-  .html{
-    font-size: 50%;
-    width:90vw;
-  }
     
   #aboutus .col img{
     width: 100%;
@@ -998,12 +974,18 @@ select {
    
     
   }
+  
+  
+  
+    
     
   }
   
   
 @media only screen and(max-width:576px) and (max-width:768px)
 {
+ 
+  
   #aboutus .col img{
     width: 100%;
     display: block;
@@ -1019,24 +1001,14 @@ select {
 font-size: 25px;
   }
 
-  *::after {
-    content: "";
-    position: absolute;
-    left: 10%;
-  
-    bottom: 16px;
-    width: 10%;
-    height: 14px;
-     
-   text-align: center;
-   justify-content: center;
-    z-index: -1;
-}
-   
+ 
 
 }  
 @media only screen  and (max-width:768px)
 {
+  
+  
+    
   #aboutus .col img{
     width: 100%;
     display: block;
